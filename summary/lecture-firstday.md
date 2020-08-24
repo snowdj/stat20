@@ -1,6 +1,6 @@
 # Detailed Topics to be covered
 
-Please download the syllabus [here](../syllabus/ec5023_syllabus.pdf) to see what will be covered.
+Please download the syllabus [here](../syllabus/syllabus.pdf) to see what will be covered.
 
 # Before next class!
 
