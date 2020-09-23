@@ -53,14 +53,16 @@
 
 # Vectors with strings 	
   v_colors <- c("blue", "yellow", "light green")	
-  v_colors	
-
-	# c() stands for ?concatenate?
+  v_colors
+  
+	# c() stands for ?concatenate? combine
 
 
 # Vector selection (Indexing/reassigning elements)
 
-  v_colors[2]         
+  v_colors[2]
+  v_colors[c(FALSE,TRUE,FALSE)]
+  
   v_colors[c(1, 3)]   
 
   v_colors[2:3]  <- c("red", "purple")	
@@ -88,7 +90,7 @@
   # for other ways to subset a vector
 
 # Assign days as names of poker_vector
-  names(v_colors) <- c("Le", "Austin", "Heather")
+  names(v_colors) <- c("Le", "Anthony", "Paul")
   
   
 # Algebraic Operations of Vectors
@@ -128,7 +130,7 @@
 
 # rename a matrix
 	rownames(matrix) <- c("Le", "Chen")
-	colnames(matrix) <- c("Yes", "No")
+	colnames(matrix) <- c("GPA", "income")
 	
 	matrix
 	
@@ -192,6 +194,8 @@
 	
 # Adding variable
 
+	df_students$height
+	
 	df_students$good <- c(1, 1, 1, 1, 0)   	
 	df_students	
 
@@ -211,7 +215,85 @@
 
 	df_students[4, 2] <- 255        #reassign Hagrid's height	
 	df_students$height[4] <- 255    #same thing as above	
-	df_students		
+	df_students	
+	
+	
+## Tibbles
+	
+#	First you can coerce any data frames to be a tibble
+	
+  install.packages("tidyverse")
+  library("tidyverse")
+  
+	mydata <- as_tibble(iris)
+	
+	# Let's compare 
+	class(iris)
+	class(mydata)
+	
+	# Two obvious advantages when using tibble
+	# 1. refined printing methods with more useful information 
+	#    but less output.
+	# 2. also allows us to use non-standard names.
+
+	
+#	Second, we can create one as follows
+
+	tibble(
+	  x = 1:6, 
+	  y = 1, 
+	  z = x ^ 2 + y
+	)
+	
+	data.frame(x = seq(1,6), y = c(1,2))
+
+	
+#	Third, we can create crazy names with backticks like follows
+	
+
+	tb <- tibble(
+	  `:)` = "smile", 
+	  ` ` = "space",
+	  `2000` = "number"
+	)
+	tb
+	
+	data.frame(:) = "smile")
+
+	
+#	Finally, we can create one using clearer code `tribble` (transposed tibble)
+	
+
+	tribble(
+	  ~x, ~y, ~z,
+	  #--|--|----
+	  "a", 2, 3.6,
+	  "b", 1, 8.5
+	)
+
+	# reproduce the following output
+	tribble(
+	  ~x, ~yes, 
+	  "y", 2,
+	  "z", 1
+	)
+	
+## Look at the following code	
+	
+	install.packages(tidyverse)
+	
+	tibble(
+	  x = c(1,3) 
+	  y = c("x","y")
+	)
+	
+	tibble(
+	  x = c(1,3, 
+	  y = c("x","y")
+	 )
+	  
+	 We understand these code perfectly as humans! but not R 
+	  
 	
 ## Data.table
 	

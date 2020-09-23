@@ -36,6 +36,8 @@
 # Function
 ##################################################
   
+  myvector <- c(1,2,3,4,5)
+  
   oklahoma <- c(81.8, 57.6,72.4,73.3,81.0, 73.1, 79.2, 79.2, 57.1, 72.4, 65.6, 74.1, 73.5)
   
   # Sum up the values and divide by the number of observations
