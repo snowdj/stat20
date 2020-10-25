@@ -31,8 +31,9 @@
 2. Slides:  [Tutorial Part (IV): ](../lecture/intro-to-R_part4.pptx)
     - Download R code used in slides before class:  [here](../lecture/intro-to-R_part4.R)
     - Download folder organization template before class [here](../lecture/examples/teaching_folder_organization_template.R)
-3. Slides:  [Tutorial Part (V): ](../lecture/intro-to-R_part5.Rmd) 
-4. More examples for `quantmod()` [here](https://www.quantmod.com/examples/)
+3. [Instructions for Downloading Data in Windows](../lecture/examples/instruction-github_download.pdf)
+4. Slides:  [Tutorial Part (V): ](../lecture/intro-to-R_part5.Rmd); 
+5. More examples for `quantmod()` [here](https://www.quantmod.com/examples/)
 
 ### Datacamp Courses
 
